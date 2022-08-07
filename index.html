@@ -7,7 +7,128 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Panda E-commerse</h1>
+    
+    <header class="container">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <!--7. remove fluid <div class="container-fluid"> for spacing-->
+              <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt=""> 
+              </a>
+              <!--2. removed width and height of logo image src -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Shoe</a>
+                  </li>
+                  <!--6. added backpack and subscribe -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Backpack</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Subscribe</a>
+                  </li>
+                  <!--4. drop down not requried <li class="nav-item dropdown"> -->
+                 <!--5.diable link not requried <a class="nav-link disabled">subscribe</a> -->
+                </ul>
+                <!--3. removed the form field -->
+                
+              </div>
+            </div>
+          </nav>
+          <!--1. slider banner starts carousal, also we use class container in header for spacing in body section-->
+          <section class="mt-5">
+            <!--2. class mt for margin top gap <section class="mt-5"> -->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Frist carousel item starts -->
+                    <div class="carousel-item active bg-info border rounded p-5">
+                    
+                        <div class="row">
+                            <div class="col-lg-7 d-flex align-items-center">
+                                <div>
+                                    <h2>cool dude Headphone</h2>
+                            <p>This is the world best headphone people who wants to waste terir time with theire funky friends</p>
+                            <h2>$550</h2>
+                                <div class="btn btn-success">Buy Now</div>
+                                </div>
+                               
+                            </div>
+                            <div class="col-lg-5">
+                                <img src="images/banner-images/headphone.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                      </div>
+                  <!--3. we add image in source <img src="images/banner-images/headphone.png" -->
+                  <!-- second carousel item starts -->
+                  <div class="carousel-item bg-warning border rounded p-5">
+                    <!--8. add background color in carousal-item -->
+                    <!--4. we add new div .row in frist image  -->
+                    <!--5. inside .row new added colum large-7 for text <div class="col-lg-7"></div>,, 
+                    **we nee to divide the picture and text spacing in 70/30 ratio or 50/50 or 25/75, ao we use col inside new div
+lets try with our frist image -->
+                    <!--6. inside .row new added colum large-5 for image <div class="col-lg-7"></div> -->
+                    <!--12. carousel border rounded -->
+                    <!-- 13. add padding allside carousel p-5,
+                         <div class="carousel-item bg-warning border rounded p-5">-->
+                    <div class="row">
+                        <div class="col-lg-7 d-flex align-items-center">
+                            <div>
+                                <h2>Mega LCD TV for Sports</h2>
+                            <p>This is the world best sports TV people who wants to waste terir time with theire funky friends</p>
+                            <h2>$1550</h2>
+                            <div class="btn btn-success">Buy Now</div>
+                            </div>
+                            <!--7. we have added $550, para, button -->
+                            <!--8. we have added, d-flex align-items-center,from utilitie for center text-->
+                            <!--9. add flex direction, flex-column, for $550 in vertical **if requried, else 10.-->
+                            <!--10. bring the whole text content wrap,  inside a single div -->
+                            <!-- 11. in col add ps-5 padding left-side, else 13. 
+                            <div class="col-lg-7 d-flex align-items-center ps-5">-->
+                        </div>
+                        <div class="col-lg-5">
+                            <img src="images/banner-images/tv.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                  </div>
+                  <!-- third carousel item starts -->
+                  <div class="carousel-item bg-danger border rounded p-5">
+                    
+                    <div class="row">
+                        <div class="col-lg-7 d-flex align-items-center">
+                            <div>
+                                <h2>X-box for your Living Room</h2>
+                            <p>This is the world best X-box people who wants to waste terir time with theire funky friends</p>
+                            <h2>$650</h2>
+                            <div class="btn btn-success">Buy Now</div>
+                            </div>
+                           
+                        </div>
+                        <div class="col-lg-5">
+                            <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                  </div>
+                  <!-- third item ends -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          </section>
+          <!--1. slider banner ends -->
+    </header>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>
