@@ -9,7 +9,7 @@
   <body>
     
     <header class="container">
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg fixed-top bg-light">
             <div class="container">
                 <!--7. remove fluid <div class="container-fluid"> for spacing-->
               <a class="navbar-brand" href="#">
@@ -25,14 +25,15 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Shoe</a>
+                    <a class="nav-link" href="#shoes">Shoe</a>
+                    <!-- lastwork id 1.1 -->
                   </li>
                   <!--6. added backpack and subscribe -->
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Backpack</a>
+                    <a class="nav-link" href="#backpack">Backpack</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Subscribe</a>
+                    <a class="nav-link" href="#subscribe">Subscribe</a>
                   </li>
                   <!--4. drop down not requried <li class="nav-item dropdown"> -->
                  <!--5.diable link not requried <a class="nav-link disabled">subscribe</a> -->
@@ -173,7 +174,8 @@ lets try with our frist image -->
     </section>
     <!-- catagories end -->
     <!-- Elaborate more shoes start  -->
-    <section class="container my-5">
+    <section class="container my-5" id="shoes">
+      <!-- lastwork id shoes1.1 -->
         <!--1. add margin vertical in container my-5 -->
         <h2>Shoes</h2>
         <div class="card-group  row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
@@ -223,7 +225,8 @@ lets try with our frist image -->
     <!-- Elaborate more shoes Ends  -->
     <!-- Elaborate more Bags Starts  -->
     <section>
-        <section class="container my-5">
+        <section class="container my-5" id="backpack">
+          <!-- lastwork id=backpack 3.3 -->
             <!--1. add margin vertical in container my-5 -->
             <h2>Backpacks</h2>
             <div class="card-group  row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
@@ -272,7 +275,40 @@ lets try with our frist image -->
         </section>
     </section>
     <!-- Elaborate more Bag Ends  -->
+    <!-- suscribe starts  -->
+    <section  style="height: 300px;" class="container rounded-3 d-flex justify-content-center align-items-center bg-warning" id="subscribe">
+      <div>
+        <!--lastwork id="subscribe4.4 -->
+        <!--4. add display flex in container  -->
+        <!--6. add justify-content-center, for horizontal center-->
+        <!-- 7. add bg-warning, style="height: 350px;"-->
+        <!--9. add rounded-3 radius, for vertical center, align-item-center -->
+        <div>
+          <!--5. bring all the content in single div -->
+          <h2>Lets Stay In Touch</h2>
+        <!--1. add heading and paragraph -->
+        <p>Get updates on sales,specials and more</p>
+        <!--2. add form for input and button -->        
+          <form>
+            <div class="mb-3">              
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">              
+            </div>
+           <!--3. Remove the unwanted field -->                
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        
+      </div>
+    </section>
+    <!-- suscribe Ends  -->
     </main>
+    <!-- footer starts -->
+    <footer class="mt-5 text-center">
+      <!--2. add margin mt-5, text-center -->
+      <p><small>@ copy; panda commerse all rights reserved. sofia, bulgeria</small></p>
+      <!--1. add content in small -->
+    </footer>
+    <!-- footer Ends -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>
